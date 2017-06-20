@@ -9,11 +9,12 @@ body h1 {
 }
 
 .btn.btn-primary {
-  background-color: #c46;
   color: white;
+  background-color: #c46;
 }
 
 .btn.btn-secondary {
+  color: black;
   background-color: #edbcc8;
 }
 
