@@ -8,12 +8,12 @@ body h1 {
   border-radius: 2px;
 }
 
-.btn.btn-primary {
+.btn-primary {
   color: white;
   background-color: #c46;
 }
 
-.btn.btn-secondary {
+.btn-secondary {
   color: black;
   background-color: #edbcc8;
 }

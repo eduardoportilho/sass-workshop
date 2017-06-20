@@ -9,12 +9,12 @@ body {
   border: 1px solid #c46;
   border-radius: 2px;
 
-  &.btn-primary {
+  &-primary {
     color: white;
     background-color: #c46;
   }
 
-  &.btn-secondary {
+  &-secondary {
     color: black;
     background-color: #edbcc8;
   }
