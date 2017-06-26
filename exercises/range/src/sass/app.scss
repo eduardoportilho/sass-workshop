@@ -2,5 +2,14 @@
 @import '_mixins';
 
 input[type="range"] {
-  // Add your styles here
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+
+  @include range-track;
+  @include range-thumb;
+
+  &:focus {
+    outline: none;
+  }
 }
