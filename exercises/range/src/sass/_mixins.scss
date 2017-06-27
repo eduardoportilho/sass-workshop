@@ -1,3 +1,6 @@
+$track-bg-color: #3071a9;
+$track-bg-focus-color: #367ebd;
+
 @mixin range-track() {
   &::-webkit-slider-runnable-track {
     @include range-track-common;
@@ -23,13 +26,13 @@
 
   &:focus {
     &::-webkit-slider-runnable-track {
-      background: #367ebd;
+      background: $track-bg-focus-color;
     }
     &::-ms-fill-lower {
-      background: #3071a9;
+      background: $track-bg-color;
     }
     &::-ms-fill-upper {
-      background: #367ebd;
+      background: $track-bg-focus-color;
     }
   }
 }
@@ -41,7 +44,7 @@
     animate: 0.2s;
 }
 
-@mixin range-track-paint($bg: #3071a9, $radius: 1.3px) {
+@mixin range-track-paint($bg: $track-bg-color, $radius: 1.3px) {
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: $bg;
     border-radius: $radius;
