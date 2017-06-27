@@ -1,5 +1,6 @@
 $track-bg-color: #3071a9;
 $track-bg-focus-color: #367ebd;
+$range-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 
 @mixin range-track() {
   &::-webkit-slider-runnable-track {
@@ -45,7 +46,7 @@ $track-bg-focus-color: #367ebd;
 }
 
 @mixin range-track-paint($bg: $track-bg-color, $radius: 1.3px) {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    box-shadow: $range-shadow;
     background: $bg;
     border-radius: $radius;
     border: 0.2px solid #010101;
@@ -66,7 +67,7 @@ $track-bg-focus-color: #367ebd;
 }
 
 @mixin range-thumb-common() {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    box-shadow: $range-shadow;
     border: 1px solid #000000;
     height: 36px;
     width: 16px;
