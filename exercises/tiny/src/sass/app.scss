@@ -1,10 +1,11 @@
 $props: m margin, p padding;
 $directions: t top, b bottom, l left, r right;
 @for $i from 1 through 5 {
+  $size: $i * 5;
   @each $prop in $props {
     @each $dir in $directions {
-      .#{nth($prop, 1)}-#{nth($dir, 1)}-#{$i * 5} {
-        #{nth($prop, 2)}-#{nth($dir, 2)}: #{$i * 5};
+      .#{nth($prop, 1)}-#{nth($dir, 1)}-#{$size} {
+        #{nth($prop, 2)}-#{nth($dir, 2)}: #{$size}px;
       }
     }
   }
