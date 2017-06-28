@@ -1,11 +1,3 @@
-/*
-5px increments, for both margin and padding, 
-in each of the four directions (top, bottom, left right).
-
-.m-t-5 {
-  margin-top: 5;
-}
-*/
 .m-t-5 {
   margin-top: 5;
 }

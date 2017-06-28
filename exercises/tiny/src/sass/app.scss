@@ -1,15 +1,10 @@
 $props: m margin, p padding;
 $directions: t top, b bottom, l left, r right;
 @for $i from 1 through 5 {
-  $val: $i * 5;
   @each $prop in $props {
-    $propAlias: nth($prop, 1);
-    $propName: nth($prop, 2);
     @each $dir in $directions {
-      $dirAlias: nth($dir, 1);
-      $dirName: nth($dir, 2);
-      .#{$propAlias}-#{$dirAlias}-#{$val} {
-        #{$propName}-#{$dirName}: #{$val};
+      .#{nth($prop, 1)}-#{nth($dir, 1)}-#{$i * 5} {
+        #{nth($prop, 2)}-#{nth($dir, 2)}: #{$i * 5};
       }
     }
   }
