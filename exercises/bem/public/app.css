@@ -15,12 +15,12 @@ body h1 {
   background-color: #008000;
 }
 
-.btn--mode-primary {
+.btn.btn--mode-primary {
   color: white;
   background-color: #c46;
 }
 
-.btn--mode-secondary {
+.btn.btn--mode-secondary {
   color: black;
   background-color: #edbcc8;
 }

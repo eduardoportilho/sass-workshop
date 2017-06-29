@@ -16,12 +16,12 @@ body {
     background-color: #008000;
   }
 
-  &--mode-primary {
+  &.btn--mode-primary {
     color: white;
     background-color: #c46;
   }
 
-  &--mode-secondary {
+  &.btn--mode-secondary {
     color: black;
     background-color: #edbcc8;
   }
