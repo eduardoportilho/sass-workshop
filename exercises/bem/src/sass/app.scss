@@ -10,4 +10,27 @@ body {
   border-width: 1px;
   line-height: 20px;
   border-radius: 2px;
+
+  &__price {
+    padding: 1px 3px;
+    background-color: #008000;
+  }
+
+  &--mode-primary {
+    color: white;
+    background-color: #c46;
+  }
+
+  &--mode-secondary {
+    color: black;
+    background-color: #edbcc8;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    .btn__price {
+      background-color: #aaa;
+    }
+  }
 }
