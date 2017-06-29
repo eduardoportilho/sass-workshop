@@ -27,11 +27,6 @@
   }
 }
 
-@function luminance($color) {
-  /* REPLACE THIS WITH YOUR REAL FUNCTION */
-  @return 0.5;
-}
-
 $white_luminance: luminance(white);
 
 @mixin button-base($color) {
